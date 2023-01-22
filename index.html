@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encriptador ACR</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <table style="width: 100%; height: 100%;">
+        <tr>
+            <td >
+                <div class="logo">
+                    <img class="logo1x" src="imagenesEncriptador/logoalura1x.png" />
+                    <title class="title">Encriptador ACR</title>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div  style="text-align: center;">
+                    <input 
+                      
+                    class="text-input"
+                      id="inputTexto"
+                      type="text"
+                      placeholder="Ingresar texto aquí"
+                    />
+                  </div>
+            </td>
+            <td rowspan="2" style="width: 40%;">
+                <div class="right">
+                    <img src="imagenesEncriptador/Muheco.png" id="muheco" />
+                    <h1 class="texto0" id="texto0">Ningún mensaje fué encontrado</h1>
+                    <h1 class="texto3" id="texto3">Resultado</h1>
+                    <textarea
+                    
+                      class="texto1"
+                      id="texto1"
+                      placeholder="Ingresar texto a encriptar o desencriptar"
+                    ></textarea>
+                    <button id="copiar" type="button" name="button" onclick="copy()">
+                      Copiar
+                    </button>
+                  </div>
+            </td>
+            
+           
+        </tr>
+        <tr>
+            <td>
+                <div class="left-button">
+                    <h2 style="text-align:center;">Solo minisculas y sin acento</h2>
+                    <button type="button" id="encriptar" onclick="encriptar()">
+                      Encriptar
+                    </button>
+                    <button type="button" id="desencriptar" onclick="desencriptar()">
+                      Desencriptar
+                    </button>
+                  </div>
+            </td>
+        </tr>
+        
+    </table>
+    </div>
+  </body>
+</html>
